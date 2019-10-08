@@ -1,0 +1,7 @@
+- Projeto feito em Protractor;
+- Para executar localmente precisa instalar o Protractor com os comandos abaixo;
+    - npm install -g protractor
+    - webdriver-manager update
+    - webdriver-manager start - para start o servidor
+    - para executar eu preciso
+- 
