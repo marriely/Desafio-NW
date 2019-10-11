@@ -1,6 +1,6 @@
 describe('Teste calculado', function() {
     it('Realiza a soma de dois elementos', function() {
-      browser.ignoreSynchronization = true; //preciso usar isso quando a aplicação é Non angular
+     // browser.ignoreSynchronization = true; //preciso usar isso quando a aplicação é Non angular
 
       browser.driver.get('https://juliemr.github.io/protractor-demo/');
 
