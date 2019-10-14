@@ -1,4 +1,9 @@
 exports.config = {
+    framework: 'jasmine',
     seleniumAddress: 'http://localhost:4444/wd/hub',
-    specs: ['poli-teste.js']
+    specs: ['*spec.js'],
+
+   // tests/e2e/homepage/**/*Spec.js',
+  
+    
   };

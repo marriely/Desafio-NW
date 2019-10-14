@@ -1,29 +1,30 @@
-describe('Teste calculado', function() {
+var testCalculadora = require('./page-objects/po_calculadora') //isso eu faço para poder usar os elementos extrídos lá no arquivo do page objetcs?
+
+describe('Teste calculadora', function() {
+
+  var testCalculadora // aqui estou criando uma variável para acessar os valores? e a de cima?
+
+  beforeEach ( function () {
+
+    console.log("passando pelo beforeEach") // nao precisa de ;?
+
+    testCalculadora = new TestCalculadora() // aqui estou fazendo o que? nao precisa de ;
+
+    browser.driver.get('https://juliemr.github.io/protractor-demo/');
+
+
+  })
+
     it('Realiza a soma de dois elementos', function() {
-     // browser.ignoreSynchronization = true; //preciso usar isso quando a aplicação é Non angular
-
-      browser.driver.get('https://juliemr.github.io/protractor-demo/');
+             
+    console.log("Teste com o valor da soma");
+    testCalculadora.primeiro_valor.sendkeys('5');
+    testCalculadora.segundo_valor.sendkeys('4');
+    testCalculadora.btn_acao.click();
+    
+    console.log("passou por todos os passos");
+     
 
      
-     
-      element.all(by.className('el-input__inner')).get(0).sendKeys('qateste@teste.com.br');
-      element.all(by.className('el-input__inner')).get(1).sendKeys('123456');
-      element(by.className('el-button credentials-actions-button el-button--default color-default credentials-actions-button-green')).click();
-
-      element.all(by.className('el-input__inner')).count().then((contador)=>{
-        console.log(contador);
-      })
-      browser.sleep(5000);
-
-     // element(by.class('el-button credentials-actions-button el-button--default color-default credentials-actions-button-green')).click();
-  
-     // var todoList = element.all(by.repeater('todo in todoList.todos'));
-     //expect(element(by.className('el-input__inner')).getText()).toEqual('qateste@teste.com.br');
-     // expect(todoList.get(2).getText()).toEqual('write first protractor test');
-  
-      // You wrote your first test, cross it off the list
-     // todoList.get(2).element(by.css('input')).click();
-     // var completedAmount = element.all(by.css('.done-true'));
-     // expect(completedAmount.count()).toEqual(2);
     });
   });
