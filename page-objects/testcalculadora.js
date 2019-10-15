@@ -9,13 +9,13 @@ var TestCalculadora = function()
     primeiro_valor: {get: function() { return element(by.model('first')) }},
     segundo_valor: {get: function() { return element(by.model('second')) }},
     
-    soma: {get: function() { return element(by.cssContainingText('option','+')) }},// para pegar quando é combo, ai é o option que tem o valor +
+    //soma: {get: function() { return element(by.cssContainingText('option','+')) }},// para pegar quando é combo, ai é o option que tem o valor +
     
-    btn_acao: {get: function() { return element(by.click('doAddition()')) }}
+    btn_acao: {get: function() { return element(by.id('gobutton')) }}
 
     })
 
-    module.export = new TestCalculadora();
+    module.exports = TestCalculadora;
 
 
 

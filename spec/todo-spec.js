@@ -1,5 +1,5 @@
 var TestCalculadora = require('../page-objects/testcalculadora') //isso eu faço para poder usar os elementos extrídos lá no arquivo do page objetcs?
-    .default //isso eu faço para poder usar os elementos extrídos lá no arquivo do page objetcs?
+   //isso eu faço para poder usar os elementos extrídos lá no arquivo do page objetcs?
 
 describe('Teste calculadora', function() {
 
@@ -11,7 +11,7 @@ describe('Teste calculadora', function() {
 
     testCalculadora = new TestCalculadora() // aqui estou fazendo o que? nao precisa de ;
 
-    browser.driver.get('https://juliemr.github.io/protractor-demo/');
+    browser.get('https://juliemr.github.io/protractor-demo/');
 
 
   })
@@ -19,8 +19,8 @@ describe('Teste calculadora', function() {
     it('Realiza a soma de dois elementos', function() {
              
     console.log("Teste com o valor da soma");
-    testCalculadora.primeiro_valor.sendkeys('5');
-    testCalculadora.segundo_valor.sendkeys('4');
+    testCalculadora.primeiro_valor.sendKeys('5');
+    testCalculadora.segundo_valor.sendKeys('4');
     testCalculadora.btn_acao.click();
     
     console.log("passou por todos os passos");
