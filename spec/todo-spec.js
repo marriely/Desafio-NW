@@ -1,4 +1,5 @@
-var testCalculadora = require('./page-objects/po_calculadora') //isso eu faço para poder usar os elementos extrídos lá no arquivo do page objetcs?
+var TestCalculadora = require('../page-objects/po_calculadora') //isso eu faço para poder usar os elementos extrídos lá no arquivo do page objetcs?
+    .default //isso eu faço para poder usar os elementos extrídos lá no arquivo do page objetcs?
 
 describe('Teste calculadora', function() {
 

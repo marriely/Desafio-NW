@@ -1,9 +1,10 @@
 // PO para extrair os elementos da calculador;
 // Com o camando let eu crio as variáveis que iram armazenar os elementos da tela;
 
-var testCalculadora = fuction() {} //criando a função que será exportada para pode usar as variaveis que recebe os elementos
+var TestCalculadora = fuction() 
+{} //criando a função que será exportada para pode usar as variaveis que recebe os elementos
 
-    testCalculadora.prototype = Object.create({}, {
+    TestCalculadora.prototype = Object.create({}, {
   
     primeiro_valor: {get: function() { return element(by.model('first')) }},
     segundo_valor: {get: function() { return element(by.model('second')) }},
@@ -14,7 +15,7 @@ var testCalculadora = fuction() {} //criando a função que será exportada para
 
     })
 
-    module.exports = testCalculadora
+    module.export = TestCalculadora
 
 
 

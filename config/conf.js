@@ -1,9 +1,11 @@
 exports.config = {
     framework: 'jasmine',
     seleniumAddress: 'http://localhost:4444/wd/hub',
-    specs: ['*spec.js'],
+    specs: ['../spec/todo-spec.js'],
+   // directConnect=true,
+   //onPrepare()
 
-   // tests/e2e/homepage/**/*Spec.js',
+  
   
     
   };
